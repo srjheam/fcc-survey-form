@@ -244,3 +244,37 @@ input:focus:not(.submit-btn), textarea:focus, select:focus {
 .submit-btn:active {
     background-color: var(--darker-blue-color);
 }
+
+footer {
+    margin-top: 128px;
+    display: flex;
+    align-items: center;
+}
+
+footer p {
+    display: inline;
+    font-weight: 300;
+    color: rgb(140, 140, 140);
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+footer div a {
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+}
+
+footer div a img {
+    height: 24px;
+    filter: grayscale(100%) opacity(45%);
+    transition: 120ms;
+}
+
+footer div a img:hover {
+    filter: grayscale(100%) opacity(100%);
+}
