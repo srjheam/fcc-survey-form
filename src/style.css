@@ -28,6 +28,119 @@ fieldset {
     padding: 16px;
 }
 
-fieldset:not(:last-of-type) {
+fieldset {
     margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: 500;
+}
+
+label:not(:last-of-type) {
+    margin-bottom: 20px;
+}
+
+
+input, textarea {
+    width: 98%;
+    min-height: 3em;
+    margin-top: 4px;
+}
+
+input, textarea, select {
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    outline: none;
+}
+
+input:hover, textarea:hover, select:hover {
+    border-color: #b2b4b8;
+}
+
+input:focus, textarea:focus, select:focus {
+    border: 1px solid #1e5aff;
+}
+
+/* Custom checkbox ~ start*/
+.checkbox-series {
+    display: block;
+    position: relative;
+    padding-left: 26px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.checkbox-series input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: white;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+}
+
+.checkbox-series:hover input~.checkmark {
+    border-color: #b2b4b8;
+}
+
+.checkbox-series input:checked~.checkmark {
+    background-color: #1e5aff;
+    border-color: #1e5aff;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-series input:checked~.checkmark:after {
+    display: block;
+}
+
+.checkbox-series .checkmark:after {
+    left: 6px;
+    top: 3px;
+    width: 3px;
+    height: 6px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* Custom checkbox ~ end*/
+
+input[type="checkbox"], input[type="radio"] {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+input[type="submit"] {
+    width: 112px;
+    min-height: 0;
+    height: 40px;
+    color: white;
+    background-color: #1e5aff;
+    font-size: 1em;
+    padding: none;
+    border: none;
+    float: right;
 }

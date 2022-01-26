@@ -14,12 +14,12 @@
     </header>
     <form id="survey-form">
         <fieldset>
-            <label id="name-label">Enter your name: <input id="name" type="text" placeholder="John Silva" required /></label>
-            <label id="email-label">Enter your email: <input id="email" type="email" placeholder="silvajohn@example.com" required /></label>
+            <label id="name-label" class="question">Enter your name: <input id="name" type="text" placeholder="John Silva" required /></label>
+            <label id="email-label" class="question">Enter your email: <input id="email" type="email" placeholder="silvajohn@example.com" required /></label>
         </fieldset>
         <fieldset>
-            <label id="number-label">Number: <input id="number" type="number" placeholder="2" min="0" max="20" /></label>
-            <label>Dropdown:
+            <label id="number-label" class="question">Number: <input id="number" type="number" placeholder="2" min="0" max="20" /></label>
+            <label class="question">Dropdown:
                 <select id="dropdown">
                     <option>(select one)</option>
                     <option>one</option>
@@ -29,15 +29,17 @@
         <fieldset>
             <label><input type="radio" name="radio-btn" value="1" /> One</label>
             <label><input type="radio" name="radio-btn" value="2" /> Two</label>
-            <label>
-                <input type="checkbox" value="0" /> Check-me
+            <label class="checkbox-series">Check-me
+                <input type="checkbox" value="0">
+                <span class="checkmark"></span>
             </label>
-            <label>
-                <input type="checkbox" value="1" /> No, check-me!
+            <label class="checkbox-series">No, check-me!
+                <input type="checkbox" value="1">
+                <span class="checkmark"></span>
             </label>
         </fieldset>
         <fieldset>
-            <label>Text area:
+            <label class="question">Text area:
                 <textarea cols="30" rows="5"></textarea>
             </label>
         </fieldset>
