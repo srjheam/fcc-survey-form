@@ -77,6 +77,11 @@ input, textarea, select {
     padding: 0 8px;
 }
 
+textarea {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
 input:hover, textarea:hover, select:hover {
     border-color: var(--accent-grey-color);
 }
