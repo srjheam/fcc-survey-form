@@ -225,12 +225,6 @@ input:focus, textarea:focus, select:focus {
 
 /* Custom radio ~ end */
 
-input[type="checkbox"], input[type="radio"] {
-    width: unset;
-    margin: 0 0.5em 0 0;
-    vertical-align: middle;
-}
-
 input[type="submit"] {
     width: 112px;
     min-height: 0;
