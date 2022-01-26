@@ -117,6 +117,7 @@ input:focus:not(.submit-btn), textarea:focus, select:focus {
     background-color: white;
     border: 1px solid var(--default-grey-color);
     border-radius: 4px;
+    transition: 240ms;
 }
 
 .checkbox-series:hover input~.checkmark {
