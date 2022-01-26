@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
-    --accent-blue-color: #1e5aff;
+    --accent-blue-color: #1a73e8;
+    --dark-blue-color: rgb(28, 105, 210);
+    --darker-blue-color: rgb(28, 94, 186);
     --default-grey-color: #dadce0;
     --accent-grey-color: #b2b4b8;
 }
@@ -30,12 +32,8 @@ fieldset {
     border: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     background-color: white;
-    margin: 0 2px;
+    margin: 0 2px 20px 0;
     padding: 16px;
-}
-
-fieldset {
-    margin-bottom: 20px;
 }
 
 ::placeholder {
@@ -83,7 +81,7 @@ input:hover, textarea:hover, select:hover {
     border-color: var(--accent-grey-color);
 }
 
-input:focus, textarea:focus, select:focus {
+input:focus:not(.submit-btn), textarea:focus, select:focus {
     border: 1px solid var(--accent-blue-color);
 }
 
@@ -225,7 +223,7 @@ input:focus, textarea:focus, select:focus {
 
 /* Custom radio ~ end */
 
-input[type="submit"] {
+.submit-btn {
     width: 112px;
     min-height: 0;
     height: 40px;
@@ -235,4 +233,14 @@ input[type="submit"] {
     padding: none;
     border: none;
     float: right;
+    transition: 120ms;
+}
+
+.submit-btn:hover {
+    background-color: var(--dark-blue-color);
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+.submit-btn:active {
+    background-color: var(--darker-blue-color);
 }
