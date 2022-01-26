@@ -184,6 +184,7 @@ input:focus:not(.submit-btn), textarea:focus, select:focus {
     width: 16px;
     border: 1px solid var(--default-grey-color);
     border-radius: 50%;
+    transition: 240ms;
 }
 
 .radio-label:hover input~.radiomark {
@@ -193,7 +194,6 @@ input:focus:not(.submit-btn), textarea:focus, select:focus {
 .radio-label input:checked~.radiomark {
     background-color: var(--accent-blue-color);   
     border-color: var(--accent-blue-color);
-    transition: 240ms background-color ease-in-out;
 }
 
 .radiomark:after {
