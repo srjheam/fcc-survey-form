@@ -45,6 +45,7 @@ fieldset {
 label {
     display: block;
     font-weight: 500;
+    width: 100%;
 }
 
 label:not(:last-of-type), .radio-group {
@@ -60,16 +61,22 @@ label.radio-label, label.checkbox-series {
     font-weight: normal;
 }
 
-input, textarea, select, .radio-group, .checkbox-series, .radio-label {
-    width: 98%;
+
+input, textarea, select, .radio-group, .checkbox-series, .radio-label {    
+    width: 97%;
     min-height: 3em;
     margin-top: 4px;
+}
+
+select {
+    width: 100%;
 }
 
 input, textarea, select {
     border: 1px solid var(--default-grey-color);
     border-radius: 4px;
     outline: none;
+    padding: 0 8px;
 }
 
 input:hover, textarea:hover, select:hover {
