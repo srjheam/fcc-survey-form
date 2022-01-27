@@ -1,6 +1,8 @@
 # Surver Form Project
 
-This my submission for the [freeCodeCamp](freeCodeCamp.org) responsive web design course survey form project.
+This is my submission for the [freeCodeCamp](https://www.freecodecamp.org/) responsive web design course survey form project.
+
+You may check it out on [this project's GitHub Pages](https://srjheam.github.io/fcc-survey-form/src/survey.html) or hosted in my [Codepen profile](https://codepen.io/srjheam/full/qBVEVqo).
 
 ## License
 
