@@ -1,4 +1,4 @@
-# Surver Form Project
+# Survey Form Project
 
 This is my submission for the [freeCodeCamp](https://www.freecodecamp.org/) responsive web design course survey form project.
 
